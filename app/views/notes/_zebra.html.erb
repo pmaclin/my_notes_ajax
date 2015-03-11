@@ -1,0 +1,6 @@
+<li id="note_<%= giraffe.id %>" class="list-group-item">
+  <%= link_to 'Show', giraffe, :class => "btn btn-default btn-sm" %>
+  <%= link_to 'Edit', edit_note_path(giraffe), :class => "btn btn-default btn-sm" %>
+  <%= link_to 'Destroy', giraffe, method: :delete, :class => "btn btn-default btn-sm", :remote => true %>
+  <%= giraffe.content %>
+</li>

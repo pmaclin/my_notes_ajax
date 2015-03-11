@@ -16,14 +16,14 @@
 
         <% end %>
       </li>
-      <% @notes.each do |note| %>
-      <li id="note_<%= note.id %>" class="list-group-item">
-        <%= link_to 'Show', note, :class => "btn btn-default btn-sm" %>
-        <%= link_to 'Edit', edit_note_path(note), :class => "btn btn-default btn-sm" %>
-        <%= link_to 'Destroy', note, method: :delete, :class => "btn btn-default btn-sm", :remote => true %>
-        <%= note.content %>
-      </li>
+      <% @notes.each do |elephant| %>
+        <%= render 'zebra', :giraffe => elephant %>
       <% end %>
     </ul>
   </div>
 </div>
+
+
+
+
+

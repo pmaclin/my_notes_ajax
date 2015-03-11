@@ -6,7 +6,7 @@
   <div class="col-md-8 col-md-offset-2">
     <ul class="list-group">
       <li class="list-group-item">
-        <%= form_for Note.new do |f| %>
+        <%= form_for Note.new, :remote => true do |f| %>
         <div class="input-group">
           <%= f.text_field :content, :placeholder => "Add a new note", :class => "form-control" %>
           <span class="input-group-btn">

@@ -5,7 +5,7 @@
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
     <ul class="list-group">
-      <li class="list-group-item">
+      <li id="new_form_list_item" class="list-group-item">
         <%= form_for Note.new, :remote => true do |f| %>
         <div class="input-group">
           <%= f.text_field :content, :placeholder => "Add a new note", :class => "form-control" %>

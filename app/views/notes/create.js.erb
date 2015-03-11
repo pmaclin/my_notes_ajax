@@ -1,4 +1,12 @@
-alert('hi');
+var new_note = $('<%= j(render 'zebra', :giraffe => @note) %>');
+
+new_note.hide();
+
+$('#new_form_list_item').after(new_note);
+
+new_note.slideDown();
+
+$('#note_content').val('');
 
 // 1. Write jQuery to insert the static text "<li>howdy!</li>" after the list item that contains the form.
 // 2. Embed the content of the actual note that was just saved instead.
